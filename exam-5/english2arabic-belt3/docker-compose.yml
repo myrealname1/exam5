@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.7"
 
 services:
   api:
@@ -24,6 +24,7 @@ services:
 
   db:
     image: postgres:11.2-alpine
+    ports: ["5432"]
     environment:
       POSTGRES_USER: demo_user
       POSTGRES_PASSWORD: demo_user
